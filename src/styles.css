@@ -1,0 +1,198 @@
+/*
+colors{
+    #0B0B0D: black;
+    #181619: dark grey;
+    #181B22: grey;
+    #272A31: light grey;
+    #2f4858: dark blue;
+    #A76B09: orange;
+    #DDA74F: light orange;
+    #DFE0DF: white-silver;
+    #FFF8EA: cream;
+    #FFF8EE: ivory;
+    #FFFFFF: hard white;
+
+    #EEB86F: light orange hover;
+}
+*/
+
+body {
+    background: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    color: #0B0B0D;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 1.5px solid #272A31;
+    border-radius: 4px;
+    background: transparent;
+}
+
+#preheader {
+    justify-content: end;
+    align-items: center;
+}
+
+#find_advisor {
+    background-color: #272A31;
+    color: #FFFFFF;
+}
+
+.content {
+    display: flex;
+    justify-content: start;
+    width: 1280px;
+}
+
+#header_logo {
+    width: 250px;
+}
+
+#break {
+    background: #272A3166;
+    height: .6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#header_content {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#phone_icon {
+    width: 16px;
+    height: 16px;
+}
+
+#phone_number {
+    font-size: 12px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+}
+
+
+/*  Modern desktop computers and laptops */
+@media only screen and (min-width: 1280px) {
+
+
+    button {
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 10px 14px 10px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: start;
+        width: 1280px;
+    }
+
+    #header_logo {
+        width: 250px;
+    }
+
+    #break {
+        background: #272A3166;
+        height: .6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #header_content {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #phone_icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    #phone_number {
+        font-size: 12px;
+        margin-bottom: 7px;
+        margin-right: 5px;
+    }
+
+    #hero {
+        margin-top: 100px;
+    }
+}
+
+/*  Smaller modern laptops, and high gen previous laptops */
+@media only screen and (min-width: 992px) {
+
+    button {
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 10px 14px 10px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: start;
+        width: 1280px;
+    }
+
+    #header_logo {
+        width: 250px;
+    }
+
+    #break {
+        background: #272A3166;
+        height: .6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #header_content {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #phone_icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    #phone_number {
+        font-size: 12px;
+        margin-bottom: 7px;
+        margin-right: 5px;
+    }
+}
+
+/*  Legacy computers and tablets */
+@media only screen and (min-width: 768px) {}
+
+/*  Small devices, tablets in portrait mode */
+@media (min-width: 600px) {}
+
+/*  Phones */
+@media only screen and (max-width: 600px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #preheader {
+        display: none;
+    }
+
+
+    #header_logo {
+        width: 40vw;
+    }
+
+    #header_content {
+        flex-direction: column;
+    }
+}
