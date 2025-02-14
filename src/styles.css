@@ -121,8 +121,19 @@ button {
         margin-right: 5px;
     }
 
-    #hero {
+    #hero_section {
         margin-top: 100px;
+        height: 460px;
+    }
+
+    /*
+    #hero_content {
+        background-image: url(img/sailingwithgrandson1280460.png);
+    }
+    */
+
+    #questionnaire {
+        background: #DFE0DF;
     }
 }
 
