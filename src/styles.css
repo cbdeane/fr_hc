@@ -46,9 +46,25 @@ button {
     align-items: center;
 }
 
+#login {
+    background-color: #FFFFFF;
+    color: #0b0b0d;
+}
+
+#login:hover {
+    background-color: #DFE0DF;
+    transition-duration: 0.4s;
+}
+
 #find_advisor {
     background-color: #272A31;
     color: #FFFFFF;
+}
+
+#find_advisor:hover {
+    background-color: #DFE0DF;
+    color: #0b0b0d;
+    transition-duration: 0.4s;
 }
 
 
