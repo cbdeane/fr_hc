@@ -75,8 +75,6 @@ button {
 
 #phone_number {
     font-size: 12px;
-    margin-bottom: 7px;
-    margin-right: 5px;
 }
 
 #checkmark {
@@ -99,6 +97,30 @@ button {
         display: flex;
         justify-content: start;
         width: 1280px;
+    }
+
+    #ticker_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 700px;
+        height: 30px;
+        background-color: #272A31;
+        color: #FFFFFF;
+        padding-left: 12px;
+        border-radius: 15px;
+    }
+
+    .quote_div>p {
+        font-size: 12px;
+        font-weight: 300;
+        margin-right: 10px;
+    }
+
+    #phone_div {
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
 
     #header_logo {
@@ -142,10 +164,10 @@ button {
 
     #hero_content {
         z-index: -2;
-        position: fixed;
+        position: absolute;
         height: 500px;
         width: 1280px;
-        background-color: red;
+        background-image: url(img/blocksresized.png);
     }
 
     .arrow_div {
@@ -168,6 +190,18 @@ button {
 
     #hero_carousel:hover>.arrow_div {
         background: #00000024;
+        transition-duration: 0.4s;
+    }
+
+    #hero_carousel:hover>.arrow_div:hover {
+        background: #00000016;
+        transition-duration: 0.4s;
+    }
+
+    .arrow_div:hover>.arrow_img {
+        width: 31px;
+        height: 31px;
+        transition-duration: 0.4s;
     }
 
     #questionnaire {
@@ -189,10 +223,12 @@ button {
         align-items: center;
         flex-direction: row;
         font-weight: 600;
+        margin-top: -40px;
     }
 
     #questionnaire_h2 {
         font-weight: 400;
+        margin-top: 0px;
     }
 
     #questionnaire_copy {
