@@ -24,6 +24,18 @@ module.exports = {
       template: "./src/helloworld.html",
       filename: "helloworld.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/talktoanadvisor.html",
+      filename: "talktoanadvisor.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pcra.html",
+      filename: "pcra.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/403b.html",
+      filename: "403b.html",
+    }),
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(dotenv.parsed)
     })

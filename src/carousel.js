@@ -1,28 +1,65 @@
-async function getHtmlContent(url) {
-  try {
-    // Make a fetch request to the provided URL
-    const response = await fetch(url);
+//set up global variables
+const DIRECTORY = ['helloworld.html', 'pcra.html', 'talktoanadvisor.html', '403b.html'];     //directory of html files to be fetched
+const SLIDE_INTERVAL = 4200; //the interval of the carousel in ms
+const hero_content = document.getElementById('hero_content'); //the div that will hold the html content
+const left_arrow = document.getElementById('carousel_leftarrow_div');
+const right_arrow = document.getElementById('carousel_rightarrow_div');
 
-    // Check if the response was successful (status 200-299)
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
+// Current index of the displayed item
+let currentIndex = 0;
 
-    // Read the response as text (HTML content)
-    const htmlContent = await response.text();
-    return htmlContent;
-  } catch (error) {
-    console.error('Error fetching HTML content:', error);
-    return null;
-  }
+// Auto-slide interval ID
+let autoSlideInterval;
+
+// Function to load the HTML content into the carousel
+function loadCarouselItem(index) {
+  fetch(DIRECTORY[index])
+    .then(response => response.text())
+    .then(html => {
+      hero_content.innerHTML = html;
+    })
+    .catch(error => console.error('Error loading HTML:', error));
 }
 
-// Example usage:
-getHtmlContent('helloworld.html').then(html => {
-  console.log(html);  // Logs the HTML content as a string
+// Show the next carousel item
+function showNextItem() {
+  currentIndex = (currentIndex + 1) % DIRECTORY.length; // Loop to start if at the end
+  loadCarouselItem(currentIndex);
+}
+
+// Show the previous carousel item
+function showPrevItem() {
+  currentIndex = (currentIndex - 1 + DIRECTORY.length) % DIRECTORY.length; // Loop to end if at the start
+  loadCarouselItem(currentIndex);
+}
+
+// Pause automatic sliding
+function pauseAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Setup event listeners
+left_arrow.addEventListener('click', () => {
+  showPrevItem();
+  pauseAutoSlide(); // Pause when manually navigated
+  startAutoSlide();
 });
 
-getHtmlContent('helloworld.html').then(html => {
-  document.getElementById('hero_content').innerHTML = html;
+right_arrow.addEventListener('click', () => {
+  showNextItem();
+  pauseAutoSlide(); // Pause when manually navigated
+  startAutoSlide();
 });
 
+//  document.getElementById('pause_button').addEventListener('click', () => {
+//    pauseAutoSlide(); // Pause when clicked
+//  });
+
+// Start the automatic sliding
+function startAutoSlide() {
+  autoSlideInterval = setInterval(showNextItem, SLIDE_INTERVAL);
+}
+
+// Initialize carousel by loading the first item and starting the auto slide
+loadCarouselItem(currentIndex);
+startAutoSlide();
