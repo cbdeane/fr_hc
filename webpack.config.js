@@ -20,6 +20,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/helloworld.html",
+      filename: "helloworld.html",
+    }),
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(dotenv.parsed)
     })
