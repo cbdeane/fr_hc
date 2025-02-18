@@ -1,7 +1,7 @@
 //set up global variables
 const DIRECTORY = ['helloworld.html', 'pcra.html', 'talktoanadvisor.html', '403b.html'];     //directory of html files to be fetched
 const SLIDE_INTERVAL = 6100; //the interval of the carousel in mso
-const section = document.getElementById('hero_section');
+const section = document.getElementById('hero_carousel');
 const hero_content = document.getElementById('hero_content'); //the div that will hold the html content
 const left_arrow = document.getElementById('carousel_leftarrow_div');
 const right_arrow = document.getElementById('carousel_rightarrow_div');
@@ -73,12 +73,9 @@ loadCarouselItem(currentIndex);
 currentSlide = document.querySelector('.carousel_module');
 startAutoSlide();
 
-section.addEventListener('mouseover', pauseAutoSlide);
+section.addEventListener('mouseover', () => {
+  pauseAutoSlide(); // Pause when hovered
+});
 section.addEventListener('mouseout', () => {
-  // wait 2 seconds, go to next slide, then start auto slide
-  setTimeout(() => {
-    showNextItem();
-  }, 2000);
-  clearTimeout;
   startAutoSlide();
 });
