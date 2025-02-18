@@ -279,25 +279,31 @@ button {
         align-items: center;
         width: 1280px;
         height: 500px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .ethos_card {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         width: 350px;
         height: 350px;
-        background: #DFE0DF;
+        /*background: #DFE0DF;*/
         margin: 20px;
     }
 
     .ethos_divider {
-        background: #272A31;
+        background: #DFE0DF80;
         height: 300px;
         width: 1px;
     }
+
+    .ethos_img {
+        width: 75px;
+        height: 75px;
+    }
+
 
     @keyframes slide-in {
         from {
