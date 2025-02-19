@@ -373,7 +373,7 @@ button {
         flex-direction: column;
         width: 242px;
         height: 417px;
-        border: 1px solid #2f4858;
+        border: 1px solid #2f485860;
         border-radius: 10px;
         padding: 24px;
     }
@@ -384,10 +384,22 @@ button {
     }
 
     .worktogether_button {
+        width: 240px;
+        height: 66px;
+        font-weight: 700;
+        font-size: 15px;
         background: #2f4858;
         color: #FFFFFF;
         border: none;
+        border-radius: 20px;
+        padding: 14px;
         box-shadow: 0px 1px 3px 0px #00000050;
+        text-align: left;
+    }
+
+    .worktogether_button:hover {
+        background: #2f4858dd;
+        transition-duration: 0.2s;
     }
 
     @keyframes slide-in {
