@@ -335,6 +335,38 @@ button {
         height: 75px;
     }
 
+    #factoid_content {
+        background-color: #DFE0DF;
+        width: 1000px;
+        height: 250px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    .worktogether_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 425px;
+        border: 1px solid #2f4858;
+        margin: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .worktogether_photo {
+        width: 240;
+        height: 145;
+    }
+
+    .worktogether_button {
+        background: #2f4858;
+        color: #FFFFFF;
+        border: none;
+        box-shadow: 0px 1px 5px 0px #00000050;
+    }
 
     @keyframes slide-in {
         from {
