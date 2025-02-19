@@ -12,14 +12,9 @@ let currentIndex = 0;
 // Auto-slide interval ID
 let autoSlideInterval;
 
-// current slide ID
-let currentSlide;
 
 // Function to load the HTML content into the carousel
 function loadCarouselItem(index) {
-  if (currentSlide != null) {
-    currentSlide.classList.add('carousel_exit');
-  }
   fetch(DIRECTORY[index])
     .then(response => response.text())
     .then(html => {
@@ -70,12 +65,5 @@ function startAutoSlide() {
 
 // Initialize carousel by loading the first item and starting the auto slide
 loadCarouselItem(currentIndex);
-currentSlide = document.querySelector('.carousel_module');
 startAutoSlide();
 
-section.addEventListener('mouseover', () => {
-  pauseAutoSlide(); // Pause when hovered
-});
-section.addEventListener('mouseout', () => {
-  startAutoSlide();
-});
