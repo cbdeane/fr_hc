@@ -110,11 +110,11 @@ button {
     transition-duration: 0.4s;
 }
 
-.content_questions_closed {
+.content_questions_opened {
     border-bottom: 1px solid #272A31;
 }
 
-.content_questions_opened {
+.content_questions_closed {
     border: none;
 }
 
@@ -123,7 +123,7 @@ button {
 }
 
 .content_answer_hidden {
-    display: hidden;
+    content-visibility: hidden;
 }
 
 .question_div {
