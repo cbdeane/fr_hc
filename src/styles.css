@@ -615,13 +615,107 @@ button {
         transition-duration: 0.2s;
     }
 
+    #questions_header_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #questions_header_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1280px;
+        height: 250px;
+    }
+
+    .questions_header_content_innercontainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 800px;
+        height: 250px;
+        border: solid 1px #2f485860;
+    }
+
+    .questions_header_content_subcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 250px;
+    }
+
+    #questions_header_content_subcontainer_img {
+        width: 400px;
+        height: 250px;
+    }
+
+    #questions_header_content_subcontainer_text {
+        padding: 30px;
+    }
+
+
+
+    #apprefer_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        background: #DFE0DF;
+    }
+
+
+    #apprefer_content {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 1280px;
+        height: 600px;
+    }
+
+    #apprefer_content_text {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #apprefer_h2 {
+        font-weight: 400;
+        margin: none;
+    }
+
+    #apprefer_h3 {
+        font-weight: 600;
+        margin: none;
+    }
+
+    #handphone_img {
+        width: 500px;
+    }
+
     #dropdown_menu {
+        position: absolute;
+        z-index: 5;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         width: 1280px;
         height: 500px;
         border: solid 1px #DFE0DF80;
+        background: #FFFFFF;
+    }
+
+    .dropdown_menu_hidden {
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
     }
 
     #root_menu {
@@ -680,6 +774,13 @@ button {
         font-weight: 600;
         font-size: 14px;
         margin: 10px;
+    }
+
+
+    #footer_section {
+        background: #2f4858;
+        height: 500px;
+        margin-top: 50px;
     }
 
     @keyframes slide-in {
