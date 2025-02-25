@@ -29,6 +29,12 @@ a {
     color: #2f4858;
 }
 
+div {
+    border: none;
+    padding: none;
+    margin: none;
+}
+
 .section {
     width: 100%;
     display: flex;
