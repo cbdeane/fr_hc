@@ -149,6 +149,21 @@ button {
     overflow: hidden;
 }
 
+#question_header_content {
+    display: flex;
+    flex-direction: column;
+}
+
+#question_header_h2 {
+    font-weight: 400;
+    font-size: 28px;
+    margin: none;
+}
+
+#question_header_h3 {
+    font-weight: 400;
+    margin: none;
+}
 
 .question_div {
     display: flex;
@@ -641,7 +656,7 @@ button {
         align-items: center;
         width: 800px;
         height: 250px;
-        border: solid 1px #2f485860;
+        border: solid 2px #2f485860;
     }
 
     .brokercheck_content_subcontainer {
