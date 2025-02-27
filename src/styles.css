@@ -725,6 +725,13 @@ button {
         width: 500px;
     }
 
+    .appbutton {
+        height: auto;
+        width: auto;
+        max-height: 35px;
+        margin-right: 10px;
+    }
+
     #dropdown_menu {
         position: absolute;
         z-index: 5;
