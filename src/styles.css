@@ -173,7 +173,6 @@ button {
 
 .answer_p {
     margin-left: 70px;
-    font-weight: 400;
 }
 
 .question_h3 {
@@ -694,12 +693,10 @@ button {
 
     #apprefer_h2 {
         font-weight: 400;
-        margin: none;
     }
 
     #apprefer_h3 {
         font-weight: 600;
-        margin: none;
     }
 
     #handphone_img {
