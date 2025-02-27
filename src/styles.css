@@ -592,6 +592,7 @@ button {
     .alternating_photo {
         border-radius: 10px;
         background: #2f4858;
+        overflow: hidden;
     }
 
     .alternating_h3 {
@@ -632,6 +633,12 @@ button {
     .alternating_button:hover {
         background: #2f4858dd;
         transition-duration: 0.2s;
+    }
+
+    .alternating_img {
+        width: auto;
+        height: auto;
+        max-height: 315px;
     }
 
     #brokercheck_section {
