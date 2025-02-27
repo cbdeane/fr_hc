@@ -121,7 +121,7 @@ button {
 
 .question_div:hover {
     background: #DFE0DF80;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 
 .question_wrapper {
@@ -137,11 +137,11 @@ button {
 }
 
 .content_answer {
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
     overflow: hidden;
 }
 
